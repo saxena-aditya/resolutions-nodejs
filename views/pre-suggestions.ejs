@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+	<title>Previous resolutions</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel = "stylesheet" href = "prev-suggestions.css">
+</head>
+<body>
+<% include header %>
+
+<div class = "container">
+<table class="table table-hover">
+<thead>
+<tr>
+<th>sender name</th>
+<th>resolution</th>
+</tr>
+<% for(var i=0; i<suggestions.length; i++) {%>
+<tr>
+<td><%= suggestions[i].person_name %> </td>
+<td><%=suggestions[i].suggestion %></td>
+</tr>	 
+<% } %>
+</table>
+</div>
+</body>
+</html>
