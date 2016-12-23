@@ -1,9 +1,9 @@
 const express = require('express')
 const route = express.Router()
-const mongodbClient = require('mongodb').MongoClient
-const dbUser = 'AdiUser'
-const dbPass = 'Aditya602'
-const dbString = 'mongodb://' + dbUser + ':'+ dbPass +'@ds143608.mlab.com:43608/new_year_resolution'
+const mongodbClient = require('mongodb').MongoClien
+
+// use your own databases password and username in place of 'dbUser' and 'dbPass'
+const dbString = 'mongodb:// dbUser:dbPass@ds143608.mlab.com:43608/new_year_resolution'
 var db
 
 var select_previous_feed = function(req, res){
