@@ -6,8 +6,8 @@ const error_page = require('./error')
 const pre_sug = require('./pre-suggestions')
 const bodyParser = require('body-parser')
 const mongodbClient = require('mongodb').MongoClient
-const dbUser = 'AdiUser'
-const dbPass = 'Aditya602'
+const dbUser = 'dbUser'
+const dbPass = 'dbPass'
 const dbString = 'mongodb://' + dbUser + ':'+ dbPass +'@ds143608.mlab.com:43608/new_year_resolution'
 var db
 var port = process.env.PORT || 5000
